@@ -1,0 +1,35 @@
+<view class="swiper">
+  <swiper indicator-dots="{{is_dots}}" autoplay="true" current="{{swiperCurrent}}" interval="5000" 
+  duration="600" bindchange="swiperChange" circular="true">
+    <block wx:for="{{img_data}}">
+      <swiper-item>
+        <image src="{{item.img_url}}" mode="aspectFill"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="dots" wx:if="{{swiper_style == 1}}">
+    <block wx:for="{{img_data}}" wx:key="unique">
+      <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+    </block>
+  </view>
+  <view class="dots_two" wx:if="{{swiper_style == 2}}">
+    <block wx:for="{{img_data}}" wx:key="unique">
+      <view class="dot{{index == swiperCurrent ? ' active' : ''}}">{{index+1}}</view>
+    </block>
+  </view>
+  <view class="dots_three" wx:if="{{swiper_style == 3}}">
+      <view class="dot">{{swiperCurrent+1}}/{{swiper_data_num}}</view>
+  </view>
+  <view class="dots_four" wx:if="{{swiper_style == 4}}">
+    <block wx:for="{{img_data}}" wx:for-item="ditem">
+      <view class="dot" wx:if="{{index==swiperCurrent}}">{{ditem.title}}</view>
+    </block>
+  </view>
+</view>
+
+<view class="container">
+    <button type="primary" bindtap="chang_swiper_style" id="1">轮播图效果一(颜色)</button>
+    <button type="primary" bindtap="chang_swiper_style" id="2">轮播图效果二(数字)</button>
+    <button type="primary" bindtap="chang_swiper_style" id="3">轮播图效果三(数字二)</button>
+    <button type="primary" bindtap="chang_swiper_style" id="4">轮播图效果四(标题)</button>
+</view>

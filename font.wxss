@@ -1,0 +1,28 @@
+
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_chrefv7a1j198uxr.eot?t=1498352748479'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_chrefv7a1j198uxr.eot?t=1498352748479#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_chrefv7a1j198uxr.woff?t=1498352748479') format('woff'), /* chrome, firefox */
+  url('//at.alicdn.com/t/font_chrefv7a1j198uxr.ttf?t=1498352748479') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_chrefv7a1j198uxr.svg?t=1498352748479#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-all:before { content: "\e696"; }
+
+.icon-close:before { content: "\e69a"; }
+
+.icon-search:before { content: "\e6ac"; }
+
+.icon-attachment:before { content: "\e6c0"; }
+
+.icon-mobilephone:before { content: "\e72a"; }
+
+.icon-password:before { content: "\e82b"; }

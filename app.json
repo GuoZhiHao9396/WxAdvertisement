@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/swiper/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fac400",
+    "navigationBarTitleText": "菜园子小程序资源",
+    "navigationBarTextStyle":"black"
+  }
+}
