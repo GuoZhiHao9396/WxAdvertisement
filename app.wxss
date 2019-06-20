@@ -1,6 +1,5 @@
 @import "font.wxss";
 /**app.wxss**/
-.test{color:#fff;}
 .clearfix { display:block; zoom:1; }
 .clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden; font-size:0; }
 .fl{ float: left;}
